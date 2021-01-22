@@ -1,0 +1,18 @@
+create database sgmfinancas;
+
+create table contas(
+ tipo VARCHAR(30) NOT NULL,
+ nome VARCHAR(75) PRIMARY KEY NOT NULL,
+ saldo DOUBLE NOT NULL
+);
+
+create table despesas(
+ nome VARCHAR(75) NOT NULL,
+ valor DOUBLE NOT NULL
+);
+
+create table lembretes(
+ nome VARCHAR(75) NOT NULL,
+ data DATE,
+ valor DOUBLE NOT NULL
+);
